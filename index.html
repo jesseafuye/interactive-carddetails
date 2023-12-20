@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="full_body">
+  <div class="left">
+    <img src="/images/bg-main-desktop.png">
+  </div>
+    <div class="front_card">
+      <img src="/images/bg-card-front.png">
+      <div class="logo">
+      <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg></div>
+   <div class="front_number">  
+  <div class="number1">0000</div> <div class="number2">0000</div> <div class="number3"> 0000</div> <div class="number4">0000</div> 
+</div> 
+    
+<div class="card_name">
+  Jesse Afuye
+</div>
+<div class="card_db">
+ <div class="db1">00</div> <div class="dbm">/</div> <div class="db2">00</div>
+</div>
+</div>
+<div class="back_card">
+  <img src="/images/bg-card-back.png">
+  <div class="card_cvc">
+  000
+</div>
+</div>
+<div class="form-container">
+  <form action="" method="">
+    <div class="form1">
+    <label for=" CardholderName"> CARDHOLDER NAME</label>
+  </div>
+    <input  class="input1" type="text" size="30"  id="CardholderName" name="CardholderName" placeholder="e.g. Jesse Afuye">
+    <div id="cardholderNameError"></div>
+  </form>
+   </div>
+   <div class="form_container2">
+    <form  action="" method="">
+   <div class="form2">
+    <label for="cardnumber">CARD NUMBER</label>
+  </div>
+  <input class="input2" type="text" id="cardnumber" name="cardnumber" pattern="\d*" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" oninput="validateCardNumber(this.value)">
+  <div id="cardNumberError"></div>
+</form>
+</div>
+  
+<form>
+
+    <div class="form-container3 ">
+      <div class="flex">
+<div  class="exp_topic"> 
+  <label  for="exp">EXP.</label>
+  <input class="exp_input" type="text" id="exp" name="exp" maxlength="2" placeholder="MM">
+  <div id="expError"></div>
+</div>
+
+
+<div  class="date_topic">
+<label for="Date (MM/YY)">DATE (MM/YY)</label>
+<input class="date_input" type="text" id="Date(MM/YY)" maxlength="2" placeholder="YY">
+<div id="dateError"></div>
+</div>
+<div class="cvc_topic">
+<label  for="CVC">CVC</label>
+<input class="cvc_input" type="text" id="CVC" name="CVC" maxlength="3" placeholder=" e.g. 123">
+<div id="cvcError"></div>
+</div>
+</div>
+</div>
+
+</form>
+
+
+<div class="button-container">
+  <a href="#next_page" class="button1"> Confirm</a>
+  <p id="errorMessage" style="color:  hsl(0, 100%, 66%);"></p>
+</div>
+
+  
+<div id="error-message"></div>
+
+
+  
+ 
+
+  
+
+  <!-- Completed state start -->
+
+
+  
+<div class="back_page" id="next_page">
+  <div class="head_logo">
+  <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+</div>
+<h1 class="head">
+  Thank you!
+</h1>
+<p class="para">
+  We've added your card details
+</p>
+<div class="button-container1">
+  <a href="" class="button2">  Continue</a>
+ 
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">jesse Afuye</a>.
+  </div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</htmly
